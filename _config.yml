@@ -1,14 +1,22 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title:            Mike's Blog
+description:      Things I find useful.
+url:              http://zodoz.github.io
+signoff:          Mike Kent
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
-# Build settings
-markdown: kramdown
+links:
+  - name:         About
+    url:          /about
+  - name:         Blog
+    url:          /
+  - name:         GitHub
+    url:          http://github.com/zodoz
+    external:     true
+highlighter:      pygments
+permalink:        pretty
+markdown:         redcarpet
+redcarpet:
+  extensions:
+    - smart
